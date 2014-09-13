@@ -1,0 +1,17 @@
+.section_of_foreign_intelligence {
+  color: #88DBFF;
+}
+
+.section_of_foreign_intelligence h3 {
+  color: white;
+}
+
+.section_of_foreign_intelligence .commander {
+  margin-left: 1em;
+}
+
+.section_of_foreign_intelligence .commander-evaluation {
+  font-weight: bold;
+  color: white;
+  margin-left: 2em;
+}
