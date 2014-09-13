@@ -10,10 +10,15 @@
     else { return 'unstoppable' }
   }
 
+  var rgb = function(color) {
+    return 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
+  }
+
   var intelligence = function(commander) {
     return {
       name: commander.name,
       evaluation: evaluation(commander.econ_rate),
+      color: rgb(commander.color[0]),
     }
   }
 
