@@ -1,12 +1,12 @@
 {
   "author": "wondible",
   "build": "71937",
-  "category": ["galactic-war", "ui"],
+  "category": ["cheat", "galactic-war", "ui"],
   "context": "client",
-  "date": "2014/09/12",
+  "date": "2014/09/13",
   "description": "Provide some information about enemey commanders on the Glactic War map.",
   "display_name": "Section of Foreign Intelligence",
-  "forum": null,
+  "forum": "https://forums.uberent.com/threads/rel-section-of-foreign-intelligence.64173/",
   "identifier": "com.wondible.pa.section_of_foreign_intelligence",
   "priority": 100,
   "scenes": {
@@ -16,6 +16,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "0.1.0"
+  "version": "1.0.0"
 }
 
