@@ -1,6 +1,7 @@
 (function() {
   var evaluation = function(rate) {
-    if (rate < 0.5) { return 'helpless' }
+    if (!rate) { return 'unspecified' }
+    else if (rate < 0.5) { return 'helpless' }
     else if (rate < 0.75) { return 'incompetent' }
     else if (rate < 0.95) { return 'weak' }
     else if (rate < 1.05) { return 'competent' }
@@ -18,7 +19,7 @@
     return {
       name: commander.name,
       evaluation: evaluation(commander.econ_rate),
-      color: rgb(commander.color[0]),
+      color: rgb((commander.color && commander.color[0]) || [255, 255, 255]),
     }
   }
 
