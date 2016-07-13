@@ -18,7 +18,7 @@
   var intelligence = function(commander) {
     return {
       name: commander.name,
-      evaluation: evaluation(commander.econ_rate),
+      evaluation: evaluation(commander.econ_rate) + commander.econ_rate.toPrecision(2),
       color: rgb((commander.color && commander.color[0]) || [255, 255, 255]),
     }
   }
@@ -33,6 +33,27 @@
       }
     }
     return commanders
+  })
+
+  var km2 = 1000000
+
+  var formatedString = function (number) {
+    var number = number / km2
+    if (number < 1000) {
+      return number.toPrecision(3)
+    } else {
+      return Math.floor(number)
+    }
+  };
+
+  model.systemSurfaceArea = ko.computed(function() {
+    var area = 0
+    model.selection.system().planets().forEach(function(planet) {
+      if (planet.generator && planet.generator.biom != 'gas') {
+        area += 4 * Math.PI * Math.pow(planet.generator.radius, 2)
+      }
+    })
+    return formatedString(area)
   })
 
   url = 'coui://ui/mods/section_of_foreign_intelligence/section_of_foreign_intelligence.html'
