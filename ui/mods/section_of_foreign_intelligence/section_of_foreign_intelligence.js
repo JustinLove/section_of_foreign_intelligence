@@ -31,6 +31,10 @@
       if (primary.minions) {
         commanders = commanders.concat(primary.minions.map(intelligence))
       }
+      // Support for Galatic War AI Overhaul
+      if (primary.foes) {
+        commanders = commanders.concat(primary.foes.map(intelligence))
+      }
     }
     return commanders
   })
