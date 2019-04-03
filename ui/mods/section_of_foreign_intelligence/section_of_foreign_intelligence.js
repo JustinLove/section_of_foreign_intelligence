@@ -18,7 +18,7 @@
   var intelligence = function(commander) {
     return {
       name: commander.name,
-      evaluation: evaluation(commander.econ_rate) + commander.econ_rate.toPrecision(2),
+      evaluation: evaluation(commander.econ_rate), // + commander.econ_rate.toPrecision(2),
       color: rgb((commander.color && commander.color[0]) || [255, 255, 255]),
     }
   }
