@@ -1,9 +1,9 @@
 {
   "author": "wondible",
-  "build": "94684",
+  "build": "113132",
   "category": ["cheat", "gw", "titans"],
   "context": "client",
-  "date": "2016/07/13",
+  "date": "2019/04/03",
   "description": "Provide some information about enemy commanders on the Galactic War map.",
   "display_name": "Section of Foreign Intelligence for galactic war",
   "forum": "https://forums.uberent.com/threads/rel-section-of-foreign-intelligence.64173/",
@@ -17,6 +17,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "1.1.0"
+  "version": "1.2.0"
 }
 
