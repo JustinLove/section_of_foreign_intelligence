@@ -1,5 +1,9 @@
 # Section of Foreign Intelligence
 
+## 1.2.1
+
+- Fix surface area display for gas planets (not included in total) - Thanks Quitch
+
 ## 1.2.0
 
 - Support for additional commanders in Galactic War AI Overhaul FFAs
